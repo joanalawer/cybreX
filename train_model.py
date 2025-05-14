@@ -20,5 +20,3 @@ clf.fit(X, y)
 # Save the model and vectorizer
 with open('model/spam_classifier.pkl', 'wb') as model_file:
     pickle.dump((clf, cv), model_file)
-
-print("Model and vectorizer saved successfully.")
