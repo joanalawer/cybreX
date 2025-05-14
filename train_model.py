@@ -5,7 +5,7 @@ from sklearn.naive_bayes import MultinomialNB
 
 # Load and preprocess data
 df = pd.read_csv("spam.csv", encoding="latin-1")
-df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, inplace=True)
+# df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, inplace=True)
 df['label'] = df['class'].map({'ham': 0, 'spam': 1})
 X = df['message']
 y = df['label']
